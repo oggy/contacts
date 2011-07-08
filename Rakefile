@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = "Import users' contacts lists from Google, Yahoo!, and Windows Live."
   gem.description = "Import users' contacts lists from Google, Yahoo!, and Windows Live."
   gem.email = "julian@turingstudio.com"
-  gem.authors = ["Mislav Marohnić", "George Ogata", "Julian Coutu"]
+  gem.authors = ["Mislav Marohnic", "George Ogata", "Julian Coutu"]
 end
 
 Jeweler::RubygemsDotOrgTasks.new
