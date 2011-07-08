@@ -49,7 +49,7 @@
       href='https://www.google.com/m8/feeds/contacts/liz%40gmail.com/full/c9012de' />
     <gd:phoneNumber rel='http://schemas.google.com/g/2005#home'
       primary='true'>
-      456
+      555-456-4567
     </gd:phoneNumber>
     <gd:email rel='http://schemas.google.com/g/2005#work'
         address='liz@gmail.com' />

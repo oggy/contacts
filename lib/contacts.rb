@@ -23,16 +23,21 @@ module Contacts
   end
 
   class Contact
-    attr_reader :name, :username, :emails
+    attr_reader :name, :username, :emails, :phones
 
-    def initialize(emails, name, username = "")
+    def initialize(emails, name, username = "", phones = [])
       @name = name
       @emails = Array(emails)
+      @phones = phones
       @username = username
     end
 
     def email
       @emails.first
+    end
+
+    def add_phones(phones)
+      phones.each { |phone| @phones.push(phone) }
     end
   end
 

@@ -49,6 +49,14 @@ describe Contacts::Google do
       contacts = @google.contacts
       contacts[1].emails.length.should == 2
     end
+
+    it "should return an array of contacts with phone numbers" do
+      @google.authentication_url("http://browser.zen.turingstudio.com/test").length.should_not == 0
+      @google.authorize({})
+      contacts = @google.contacts
+      contacts[0].phones.length.should == 1
+      contacts[0].phones.first.should == "555-456-4567"
+    end
   end
 
 end

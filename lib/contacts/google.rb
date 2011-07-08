@@ -78,7 +78,9 @@ module Contacts
         next if emails.empty?
         title = entry.at('title') and
           name = title.inner_text
-        Contact.new(emails, name)
+        Contact.new(emails, name).tap { |c|
+          c.add_phones(entry.search('./gd:phoneNumber').map { |e| e.text.strip })
+        }
       end.compact
     end
   end
